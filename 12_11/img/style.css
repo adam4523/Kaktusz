@@ -1,0 +1,81 @@
+body{
+    background: rgb(255 103 0);
+    color: black;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 85%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "tartalom tartalom tartalom"
+    "footer footer footer";
+    /*background-color: dodgerblue;*/
+    max-width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+#tartalom{
+    grid-area: tartalom;
+    grid-template-columns: 1f1 2fr;
+    grid-template-areas: 
+    "article aside";
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: orange;
+}
+header{
+    grid-area: header;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: orange;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 15px;
+}
+
+nav{
+    grid-area: nav;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: orange;
+}
+
+article{
+    grid-area: article;
+    padding: 5px;
+}
+
+aside{
+    grid-area: aside;
+    text-align: justify;
+}
+
+footer{
+    grid-area: footer;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: orange;
+    text-align: center;
+}
+
+ul{
+    text-decoration: none;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    padding: 3vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
